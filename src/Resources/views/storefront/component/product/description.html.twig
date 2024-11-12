@@ -1,0 +1,25 @@
+{% sw_extends '@Storefront/storefront/component/product/description.html.twig' %}
+
+{% block component_product_description_content %}
+    {{ parent() }}
+    <form action="{{ frontend.mail.send_test_email }}" method="get">
+        <div class="custom-form-container">
+            <h2>Do you have any questions about this carpet?</h2>
+            <form>
+                <div class="custom-form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="custom-form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="custom-form-group full-width">
+                    <label for="question">Your Question *</label>
+                    <textarea id="question" name="question" rows="4" required></textarea>
+                </div>
+                <button type="custom-btn-submit">Send Message</button>
+            </form>
+        </div>
+    </form>
+{% endblock %}

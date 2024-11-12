@@ -1,0 +1,27 @@
+{
+    "name": "form-under-description/form-under-description",
+    "description": "form-under-description/form-under-description",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "FormUnderDescription\\FormUnderDescription",
+        "label": {
+            "de-DE": "Form Under Description",
+            "en-GB": "Form Under Description"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FormUnderDescription\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FormUnderDescription\\Tests\\": "tests/"
+        }
+    }
+}
